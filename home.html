@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/2166435234.js" crossorigin="anonymous"></script>
+<style>
+    .poppins-font{
+        font-family: "Poppins", sans-serif;
+      }
+</style>
+</head>
+<body class="poppins-font">
+    <h1 class="text-5xl text-extrabold text-center mt-6">Welcome to our Payoo Bank Money Financial Service</h1>
+    <main class="flex justify-center mt-6">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-1">
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-title font-bold">Total Account Balance</div>
+                      <div id="account-balance" class="stat-value">55</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="flex flex-col lg:flex-row gap-6">
+                    <button id="add-money" class="btn btn-primary">Add Money</button>
+                    <button id="cash-out" class="btn btn-primary">Cash Out</button>
+                  </div>
+                  <div class="divider"></div>
+                  <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="amount" type="text" placeholder="enter your amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Your Pin</span>
+                        </label>
+                        <input id="second-pin" type="password" placeholder="your pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="second-login-btn" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+               <!-- CASH OUT -->
+               <div id="cash-out-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="amount1" type="text" placeholder="enter your amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Your Pin</span>
+                    </label>
+                    <input id="second-pin1" type="password" placeholder="your pin" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="second-login-btn1" class="btn btn-primary">cash Out</button>
+                  </div>
+                </form>
+              </div>
+                  
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./home.js"></script>
+    <script src="./toggle.js"></script>
+</body>
+</html>
